@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="FFTest(failed)" parallel="tests">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="demo.CrossBrowsersTesting">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="verifySinInBtnVisibility"/>
+          <include name="verifySingInBtnEnable"/>
+          <include name="verifyText"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- demo.CrossBrowsersTesting -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
+  <test thread-count="5" name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="Internet Explorer"/>
+    <classes>
+      <class name="demo.CrossBrowsersTesting">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="verifySinInBtnVisibility"/>
+          <include name="verifySingInBtnEnable"/>
+          <include name="verifyText"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- demo.CrossBrowsersTesting -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
